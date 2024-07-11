@@ -4,7 +4,7 @@ import NavbarComponent from "~/components/NavbarComponent.vue";
 </script>
 
 <template>
-  <div id="inner-box" class="">
+  <div id="inner-box" class="rounded-lg border-2 m-5 border-solid">
     <NavbarComponent id="navbar"/>
     <slot />
   </div>
@@ -13,11 +13,7 @@ import NavbarComponent from "~/components/NavbarComponent.vue";
 
 <style scoped>
 #inner-box {
-  margin: 20px;
   border-color: var(--inner-box-border-color);
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
   background-color: var(--inner-box-color);
   width: -webkit-fill-available;
   height: -webkit-fill-available;
