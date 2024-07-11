@@ -8,6 +8,6 @@
 
 <style>
 body {
-  background-color: #010c15;
+  background-color: var(--outer-box-color);
 }
 </style>
