@@ -4,12 +4,23 @@
     --outer-box-color: #010c15;
     --inner-box-color: #011627;
     --inner-box-border-color: aqua;
+    --variable-keyword-color: #cf8e6d;
+    --variable-name-color: #a9b7c6;
+    --variable-string-value-color: #51aa72;
 }
 
-
+.variable-keyword {
+    color: var(--variable-keyword-color);
+    font-weight: bold;
+}
+.variable-name {
+    color: var(--variable-name-color);
+}
+.variable-string-value {
+    color: var(--variable-string-value-color);
+}
 * {
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    color: white !important;
 }

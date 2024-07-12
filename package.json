@@ -14,8 +14,8 @@
     "@primevue/themes": "^4.0.0",
     "nuxt": "^3.12.3",
     "primevue": "^4.0.0",
-    "typewriter-effect": "^2.21.0",
-    "vue": "latest"
+    "vue": "latest",
+    "vue-writer": "^2.0.2"
   },
   "devDependencies": {
     "@primevue/nuxt-module": "^4.0.0"

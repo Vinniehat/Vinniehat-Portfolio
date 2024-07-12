@@ -1,15 +1,26 @@
 <script setup lang="ts">
+import SocialCodeComponent from "~/components/SocialCodeComponent.vue";
+
 definePageMeta({
   layout: 'default-layout',
 })
+const runtimeConfig = useRuntimeConfig()
+const writerPrompts = [
+    'Web Developer.',
+    'Gamer.'
+]
 </script>
 
 <template>
   <div class="flex justify-center">
     <div class="grid grid-cols-2 gap-4" style="height: 85vh">
-      <div class="flex flex-col justify-center items-start">
-        <p class="mb-4 text-xl text-center">Hi there, I am</p>
-        <p class="mb-4 text-6xl text-center">Vincent Lauro</p>
+      <div class="flex flex-col justify-center ">
+        <p class="mb-4 text-xl">Hi there, I am</p>
+        <p class="mb-4 text-6xl">Vincent Lauro</p>
+        <VueWriter id="writer-text" class="mb-16 text-4xl" :array="writerPrompts">> </VueWriter>
+
+        <p class="text-gray-500">// Visit my links below!</p>
+        <SocialCodeComponent :url="runtimeConfig.public.GITHUB_URL" siteName="GitHub" />
       </div>
 
       <div class="flex flex-col overflow-auto justify-center items-center">
@@ -22,4 +33,7 @@ definePageMeta({
 
 <style scoped>
 /* No additional styles needed here as Tailwind classes are used */
+#writer-text {
+  color: #b314a6;
+}
 </style>
